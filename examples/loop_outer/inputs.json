@@ -1,0 +1,18 @@
+{
+  "few_shot_examples": [
+    {
+      "alpha": 8,
+      "beta": 13
+    },
+    {
+      "alpha": 5,
+      "beta": 16
+    },
+    {
+      "alpha": 3,
+      "beta": 18
+    }
+  ],
+  "gamma": 9,
+  "delta": 10
+}

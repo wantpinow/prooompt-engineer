@@ -1,0 +1,9 @@
+{% message user %}
+I have three friends:
+
+{% for friend in friends %}
+- {{friend.name}} aged {{friend.age}}
+{% endfor %}
+
+Who is the oldest?
+{% endmessage %}

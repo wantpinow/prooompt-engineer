@@ -1,0 +1,30 @@
+[
+  {
+    "role": "user",
+    "content": "What is 8 + 13?"
+  },
+  {
+    "role": "assistant",
+    "content": "21"
+  },
+  {
+    "role": "user",
+    "content": "What is 5 + 16?"
+  },
+  {
+    "role": "assistant",
+    "content": "21"
+  },
+  {
+    "role": "user",
+    "content": "What is 3 + 18?"
+  },
+  {
+    "role": "assistant",
+    "content": "21"
+  },
+  {
+    "role": "user",
+    "content": "What is 9 + 10?"
+  }
+]

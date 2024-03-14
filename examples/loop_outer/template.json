@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "type": "loop",
+      "content": "example",
+      "iterator": "example",
+      "iterable": "few_shot_examples",
+      "template": [
+        {
+          "type": "message",
+          "role": "user",
+          "template": [
+            {
+              "type": "text",
+              "content": "What is "
+            },
+            {
+              "type": "eval",
+              "value": "example['alpha']"
+            },
+            {
+              "type": "text",
+              "content": " + "
+            },
+            {
+              "type": "eval",
+              "value": "example['beta']"
+            },
+            {
+              "type": "text",
+              "content": "?"
+            }
+          ]
+        },
+        {
+          "type": "message",
+          "role": "assistant",
+          "template": [
+            {
+              "type": "eval",
+              "value": "example['alpha'] + example['beta']"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "message",
+      "role": "user",
+      "template": [
+        {
+          "type": "text",
+          "content": "What is "
+        },
+        {
+          "type": "eval",
+          "value": "gamma"
+        },
+        {
+          "type": "text",
+          "content": " + "
+        },
+        {
+          "type": "eval",
+          "value": "delta"
+        },
+        {
+          "type": "text",
+          "content": "?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "items": [
+    {
+      "type": "message",
+      "role": "user",
+      "template": [
+        {
+          "type": "text",
+          "content": "Alpha is "
+        },
+        {
+          "type": "eval",
+          "value": "alpha"
+        },
+        {
+          "type": "text",
+          "content": ". Beta plus one is "
+        },
+        {
+          "type": "eval",
+          "value": "beta+1"
+        },
+        {
+          "type": "text",
+          "content": ". Express "
+        },
+        {
+          "type": "eval",
+          "value": "alpha + 2 * beta"
+        },
+        {
+          "type": "text",
+          "content": " in terms of alpha and beta."
+        }
+      ]
+    }
+  ]
+}

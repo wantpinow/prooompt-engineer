@@ -1,0 +1,42 @@
+{
+  "items": [
+    {
+      "type": "message",
+      "role": "user",
+      "template": [
+        {
+          "type": "text",
+          "content": "I have three friends:\n"
+        },
+        {
+          "type": "loop",
+          "content": "name",
+          "iterator": "friend",
+          "iterable": "friends",
+          "template": [
+            {
+              "type": "text",
+              "content": "\n- "
+            },
+            {
+              "type": "eval",
+              "value": "friend['name']"
+            },
+            {
+              "type": "text",
+              "content": " aged "
+            },
+            {
+              "type": "eval",
+              "value": "friend['age']"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": "\n\nWho is the oldest?"
+        }
+      ]
+    }
+  ]
+}

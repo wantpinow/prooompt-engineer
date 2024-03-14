@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "type": "message",
+      "role": "system",
+      "template": [
+        {
+          "type": "text",
+          "content": "You are a genius"
+        }
+      ]
+    },
+    {
+      "type": "message",
+      "role": "user",
+      "template": [
+        {
+          "type": "text",
+          "content": "My name is "
+        },
+        {
+          "type": "eval",
+          "value": "name"
+        },
+        {
+          "type": "text",
+          "content": ". What is my name?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{% message system %}
+You are a genius
+{% endmessage %}
+
+{% message user %}
+My name is {{name}}. What is my name?
+{% endmessage %}

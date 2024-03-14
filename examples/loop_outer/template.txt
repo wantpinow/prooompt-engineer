@@ -1,0 +1,15 @@
+{% for example in few_shot_examples %}
+
+    {% message user %}
+    What is {{example.alpha}} + {{example.beta}}?
+    {% endmessage %}
+
+    {% message assistant %}
+    {{example.alpha + example.beta}}
+    {% endmessage %}
+
+{% endfor %}
+
+{% message user %}
+What is {{gamma}} + {{delta}}?
+{% endmessage %}
