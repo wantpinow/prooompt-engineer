@@ -15,8 +15,9 @@ pytest = "^8.1.1"
 
 
 [tool.poetry.group.dev.dependencies]
-black = "^24.2.0"
+black = {extras = ["jupyter"], version = "^24.2.0"}
 ipykernel = "^6.29.3"
+pylint = "^3.1.0"
 
 [build-system]
 requires = ["poetry-core"]
