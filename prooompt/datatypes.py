@@ -31,26 +31,26 @@ TemplateItemUnion = Annotated[
 ]
 
 
-# message
+# message template
 class TemplateMessage(BaseModel):
     type: Literal[TemplateItemType.MESSAGE] = TemplateItemType.MESSAGE
     role: MessageRole
     template: list[TemplateItemUnion]
 
 
-# text
+# text template
 class TemplateText(BaseModel):
     type: Literal[TemplateItemType.TEXT] = TemplateItemType.TEXT
     content: str
 
 
-# eval
+# eval template
 class TemplateEval(BaseModel):
     type: Literal[TemplateItemType.EVAL] = TemplateItemType.EVAL
     value: str
 
 
-# loop
+# loop template
 class TemplateLoop(BaseModel):
     type: Literal[TemplateItemType.LOOP] = TemplateItemType.LOOP
     iterator: str
@@ -58,7 +58,7 @@ class TemplateLoop(BaseModel):
     template: list[TemplateItemUnion]
 
 
-# template
+# overall template
 class Template(BaseModel):
     items: list[TemplateItemUnion]
 

@@ -6,7 +6,7 @@
       "template": [
         {
           "type": "text",
-          "content": "I have three friends:\n"
+          "content": "I have three friends:\n\n"
         },
         {
           "type": "loop",
